@@ -16,14 +16,16 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Header/>
         <Switch>
           <Route exact path = '/' component={HomeDap} />
           <Route path = '/nosotros' component={Nosotros} />
           <Route path = '/products' component={Products} />
           <Route path = '/team' component={Team} />
+          <Route path = '/album' component={Home} />
+          <Route path = '/amanual' component={UserManual} />
+          <Route path = '/afaq' component={FAQ} />
+          <Route path = '/atyc' component={TyC} />
         </Switch>
-        <Footer/>
       </Router>
     </div>
     

@@ -1,13 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
+import AlbumHeader from './AlbumHeader'
 
 function UserManual() {
 
   return (
-    <ManualPage>
+    <>
+    <AlbumHeader/>
+      <ManualPage>
         <Title>Descubre como utilizar correctamente todas las funcionalidades que Album Club tiene para ofrecerte.</Title>
         <iframe width="85%" height="600vh" src="https://www.youtube.com/embed/IPNMhn1eM34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </ManualPage>
+      </ManualPage>
+    </>
+    
   )
 }
 
@@ -21,6 +26,8 @@ const ManualPage = styled.div `
     position: relative;
     flex-direction: column;
     margin-bottom: 5vh;
+    background-color: #F1EDE9;
+
 `
 
 const Title = styled.h1 `

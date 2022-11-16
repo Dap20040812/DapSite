@@ -1,21 +1,32 @@
 import React from 'react'
 import styled from 'styled-components'
+import {Link} from 'react-router-dom'
+import Header from './Header'
+import Footer from './Footer'
 
 function Products() {
+
   return (
+    <>
+    <Header/>
     <Container>
         <Title>
             <Text>Nuestros Productos</Text>
             <Contain>
+            <MenuLink to={`/album`}>
                 <Product>
                     <img src='https://i.imgur.com/iNHZAWZ.png' width="100%"/>
                 </Product>
+            </MenuLink>
                 <Product>
                     <img src='images/table.png' width="90%"/>
                 </Product>
             </Contain>
         </Title>
     </Container>
+    <Footer/>
+    </>
+    
   )
 }
 
@@ -74,4 +85,9 @@ const Text = styled.div`
 const Subtitle = styled.div`
     color: white;
     font-size: 2vmax;
+`
+
+const MenuLink = styled(Link) `
+
+    text-decoration: none;
 `

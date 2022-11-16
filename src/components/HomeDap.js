@@ -1,16 +1,23 @@
 import React from 'react'
 import styled from 'styled-components'
+import Footer from './Footer'
+import Header from './Header'
 
 function HomeDap() {
   return (
-    <Container>
+    <>
+      <Header/>
+      <Container>
         <Title>
                 <Contain>
                     <img src='images/Daplogow.png' width="100%"/>
-                    <Subtitle>Desarrollando sueños con tecnologia</Subtitle>
+                    <Subtitle>Desarrollando sueños con tecnología</Subtitle>
                 </Contain>
             </Title>
-    </Container>
+      </Container>
+      <Footer/>
+    </>
+    
   )
 }
 

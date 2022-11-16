@@ -1,8 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
+import Footer from './Footer'
+import Header from './Header'
 
 function Nosotros() {
   return (
+    <>
+    <Header/>
     <Container>
         <Contain>
             <Title>Nosotros</Title>
@@ -19,6 +23,9 @@ function Nosotros() {
             </Section2>
         </Contain>
     </Container>
+    <Footer/>
+    </>
+    
   )
 }
 

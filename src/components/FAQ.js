@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 import styled from 'styled-components'
+import AlbumHeader from './AlbumHeader'
+import Header from './Header'
 
 const muchoTexto = [
     {
@@ -31,6 +33,8 @@ function FAQ() {
     }
 
   return (
+    <>
+    <AlbumHeader/>
     <FAQPage>
             <Titles>
                 <Title>FAQ</Title>
@@ -54,6 +58,8 @@ function FAQ() {
                 </Accordion>
             </AccordionContainer>
     </FAQPage>
+    </>
+    
   )
 }
 
@@ -63,6 +69,7 @@ const FAQPage = styled.div `
     padding: 0 calc(3.5vw + 5px);
     display: flex;
     flex-direction: column;
+    background-color: #F1EDE9;
 `
 
 const Titles = styled.div `

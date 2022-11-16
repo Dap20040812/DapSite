@@ -1,9 +1,14 @@
-import React from 'react'
+import React,{useEffect,useState} from 'react'
 import styled from 'styled-components'
+import AlbumHeader from './AlbumHeader'
+import Header from './Header'
 
 function Home() {
+    
   return (
-    <HomePage>
+    <>
+        <AlbumHeader/>
+        <HomePage>
         <Left>
             <Phone src='images/celular.png'/>
         </Left>
@@ -17,6 +22,8 @@ function Home() {
             <Nequi src="images/NEQUI.png"/>
         </Bottom>
     </HomePage>
+    </>
+    
   )
 }
 
@@ -29,6 +36,7 @@ const HomePage = styled.div `
     align-items: center;
     justify-content: center;
     position: relative;
+    background-color: #F1EDE9;
 `
 
 const Phone = styled.img `
@@ -81,6 +89,7 @@ const BtnDownload = styled.a`
     font-size: 1.3rem;
     text-decoration: none;
     color: white;
+    transition: 0.5s;
 
     &:hover {
         background-color: #C33760;

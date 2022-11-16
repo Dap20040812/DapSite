@@ -1,9 +1,9 @@
-import React, { useState, useEffect} from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
 import { useHistory } from 'react-router-dom'
 
-function Header() {
+function AlbumHeader() {
 
     const [isOpen, setIsOpen] = useState(false)
     const history = useHistory()
@@ -14,10 +14,10 @@ function Header() {
     }
 
   return (
-    
+
     <Nav>
         <Left>
-        <Logo onClick={main} src='images/Daplogow.png' width="100%"/>
+        <Logo onClick={main} src='images/Daplogow.png'/>
         </Left>
         <Hamburger onClick={() => setIsOpen(!isOpen)}>
             <span />
@@ -25,16 +25,16 @@ function Header() {
             <span />
         </Hamburger>
         <NavMenu isOpen={isOpen}>
-            <MenuLink to={`/`}> <span>Inicio</span> </MenuLink>
-            <MenuLink to={`/nosotros`}> <span>Nosotros</span> </MenuLink>
-            <MenuLink to={`/products`}> <span>Nuestros Productos</span> </MenuLink>
-            <MenuLink to={`/team`}> <span>Equipo</span> </MenuLink>
+            <MenuLink to={`/album`}> <span>Inicio</span> </MenuLink>
+            <MenuLink to={`/amanual`}> <span>Manual de Usuario</span> </MenuLink>
+            <MenuLink to={`/atyc`}> <span>Términos y Condiciones</span> </MenuLink>
+            <MenuLink to={`/afaq`}> <span>FAQ</span> </MenuLink>
         </NavMenu>
     </Nav>
   )
 }
 
-export default Header
+export default AlbumHeader
 
 const Nav = styled.div `
   padding: 0 6vh 0 2vw; 
@@ -42,7 +42,7 @@ const Nav = styled.div `
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background: #3278B0;
+  background: #8b1638;
   position: relative;
   top: 0;
   left: 0;

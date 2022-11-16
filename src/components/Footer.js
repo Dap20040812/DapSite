@@ -12,10 +12,7 @@ function Footer() {
             </Description>
             <SocialContainer>
                 <SocialIcon color='#e4405f'>
-                    <a href='https://instagram.com/sabana_herons?igshid=YmMyMTA2M2Y='><Instagram/></a>
-                </SocialIcon>
-                <SocialIcon color='#55acee'>
-                    <Twitter />
+                    <a><Instagram/></a>
                 </SocialIcon>
             </SocialContainer>
         </Left>

@@ -1,18 +1,22 @@
 import React from 'react'
 import styled from 'styled-components'
+import AlbumHeader from './AlbumHeader'
+import Header from './Header'
 
 function TyC() {
   return (
+    <>
+    <AlbumHeader/>
     <Container>
-        <Texto>
+        <Titulo>
             Términos y condiciones
-        </Texto>
-        <Texto>
+        </Titulo>
+        <p>
             Última actualización: 29 de septiembre de 2022
-        </Texto>
-        <Texto>
+        </p>
+        <p>
             Lea estos términos y condiciones detenidamente antes de utilizar Nuestro Servicio.
-        </Texto>
+        </p>
         <Titulo>
             Interpretación y Definiciones
         </Titulo>
@@ -165,6 +169,8 @@ function TyC() {
         Si tiene alguna pregunta sobre estos Términos y Condiciones, puede contactarnos: Al visitar esta página en nuestro sitio web: albumclub.site
         </Texto>
     </Container>
+    </>
+    
   )
 }
 
@@ -173,11 +179,13 @@ export default TyC
 const Container = styled.div `
     display: flex;
     height: max-content;
+    width: 100%;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 8vmin;
+    background-color: #F1EDE9;
+
 `
 
 const Texto = styled.p `
