@@ -8,58 +8,46 @@ function TyC() {
     <>
     <AlbumHeader/>
     <Container>
-        <Titulo>
+        <Title>
             Términos y condiciones
-        </Titulo>
+        </Title>
         <p>
             Última actualización: 29 de septiembre de 2022
-        </p>
-        <p>
+            <br/>
             Lea estos términos y condiciones detenidamente antes de utilizar Nuestro Servicio.
         </p>
         <Titulo>
             Interpretación y Definiciones
         </Titulo>
-        <Texto>
+        <Subtitle>
             Interpretación
-        </Texto>
+        </Subtitle>
         <Texto>
             Las palabras cuya letra inicial está en mayúscula tienen significados definidos bajo las siguientes condiciones. Las siguientes definiciones tendrán el mismo significado independientemente de que aparezcan en singular o en plural.
         </Texto>
-        <Texto>
+        <Subtitle>
         Definiciones
-        </Texto>
+        </Subtitle>
         <Texto>
         A los efectos de estos Términos y Condiciones:
         </Texto>
-        <Texto>
-        Solicitud significa el programa de software proporcionado por la Compañía descargado por Usted en cualquier dispositivo electrónico, llamado Álbum Club
-        </Texto>
-        <Texto>
+        <Texto>Solicitud significa el programa de software proporcionado por la Compañía descargado por Usted en cualquier dispositivo electrónico, llamado Álbum Club
         Tienda de aplicaciones significa el servicio de distribución digital operado y desarrollado por Apple Inc. (Apple App Store) o Google Inc. (Google Play Store) en el que se ha descargado la Aplicación.
-        </Texto>
-        <Texto>
+        <br/>
+        <br/>
         Afiliado significa una entidad que controla, es controlada o está bajo el control común de una parte, donde "control" significa la propiedad del 50% o más de las acciones, participación accionaria u otros valores con derecho a voto para la elección de directores u otra autoridad administrativa.
-        </Texto>
-        <Texto>
         País se refiere a: Colombia
-        </Texto>
-        <Texto>
+        <br/>
+        <br/>
         Compañía (referido como "la Compañía", "Nosotros", "Nos" o "Nuestro" en este Acuerdo) se refiere a Álbum Club.
-        </Texto>
-        <Texto>
+        <br/>
         Dispositivo significa cualquier dispositivo que pueda acceder al Servicio, como una computadora, un teléfono celular o una tableta digital.
-        </Texto>
-        <Texto>
         Servicio se refiere a la Aplicación.
-        </Texto>
-        <Texto>
-        Compañía (referido como "la Compañía", "Nosotros", "Nos" o "Nuestro" en este Acuerdo) se refiere a Álbum Club.
-        </Texto>
-        <Texto>
+        <br/>
+        <br/>
         Términos y condiciones (también denominados "Términos") se refieren a estos Términos y condiciones que forman el acuerdo completo entre Usted y la Compañía con respecto al uso del Servicio. Este acuerdo de Términos y Condiciones ha sido creado con la ayuda de laGenerador de Términos y Condiciones.
-        </Texto>
-        <Texto>
+        <br/>
+        <br/>
         Tú significa la persona que accede o utiliza el Servicio, o la empresa u otra entidad legal en nombre de la cual dicha persona accede o utiliza el Servicio, según corresponda.
         </Texto>
         <Titulo>
@@ -135,15 +123,15 @@ function TyC() {
         <Titulo>
         Divisibilidad y renuncia
         </Titulo>
-        <Texto>
+        <Subtitle>
         Divisibilidad
-        </Texto>
+        </Subtitle>
         <Texto>
         Si alguna disposición de estos Términos se considera inaplicable o inválida, dicha disposición se cambiará e interpretará para lograr los objetivos de dicha disposición en la mayor medida posible según la ley aplicable y las disposiciones restantes continuarán en pleno vigor y efecto.
         </Texto>
-        <Texto>
+        <Subtitle>
         Excencion
-        </Texto>
+        </Subtitle>
         <Texto>
         Salvo lo dispuesto en el presente, la falta de ejercicio de un derecho o de exigir el cumplimiento de una obligación en virtud de estos Términos no afectará la capacidad de una parte para ejercer dicho derecho o exigir dicho cumplimiento en cualquier momento posterior ni la renuncia a un incumplimiento constituirá una renuncia a cualquier incumplimiento posterior.
         </Texto>
@@ -180,17 +168,29 @@ const Container = styled.div `
     display: flex;
     height: max-content;
     width: 100%;
+    justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: #F1EDE9;
 
+`
+const Title = styled.div`
+    color: #500A1E;
+    font-size: 4vmax;
+    padding: 2vmax;
+    font-weight: bold;
 `
 
 const Texto = styled.p `
     color: #8b1638;
+    text-align: justify;
     font-size: 3vmin;
+    padding: 2vmax;
+`
+const Subtitle = styled.div `
+    color: #8b1638;
+    font-weight: bold;
+    font-size: 2vmax;
 `
 
 const Titulo = styled.p `

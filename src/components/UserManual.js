@@ -25,8 +25,8 @@ const ManualPage = styled.div `
     justify-content: center;
     position: relative;
     flex-direction: column;
-    margin-bottom: 5vh;
     background-color: #F1EDE9;
+    padding-bottom: 4vmax;
 
 `
 
