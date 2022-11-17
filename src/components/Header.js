@@ -59,6 +59,7 @@ const Left = styled.div`
 const Logo = styled.img `
     height: 12vh;
     margin: 2.5px 10px 0px;
+    cursor: pointer;
 `
 
 const NavMenu = styled.div`

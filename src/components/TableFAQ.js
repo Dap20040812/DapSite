@@ -1,15 +1,14 @@
 import React, {useState} from 'react'
 import styled from 'styled-components'
-import AlbumHeader from './AlbumHeader'
-import Header from './Header'
+import TableHeader from './TableHeader'
 
 const muchoTexto = [
     {
-        question: '¿Cuántas personas puedo agregar a una sala?',
-        answer: 'El número máximo de personas que pueden pertenecer a una sala son 10.'
+        question: '¿Cuántas mesas puedo agregar?',
+        answer: 'No hay un límite para el número de mesas que puede tener tu restaurante.'
     }, {
-        question: '¿A cuántas salas puedo pertenecer?',
-        answer: 'No hay un límite para el número de salas a las que puede pertenecer una persona.'
+        question: '¿Cuántos productos puedo tener en mi menú?',
+        answer: 'No hay un límite para el número de productos que puede tener tu menú.'
     }, {
         question: '¿En qué dispositivos funciona la aplicación?',
         answer: 'Actualmente solo funciona para sistemas operativos Android, próximamente estará disponible para iOS.'
@@ -19,7 +18,7 @@ const muchoTexto = [
     }
 ]
 
-function FAQ() {
+function TableFAQ() {
 
     const [accordion, setAccordion] = useState(false)
 
@@ -31,10 +30,9 @@ function FAQ() {
 
         setAccordion(index)
     }
-
   return (
     <>
-    <AlbumHeader/>
+    <TableHeader/>
     <FAQPage>
             <Titles>
                 <Title>FAQ</Title>
@@ -59,11 +57,10 @@ function FAQ() {
             </AccordionContainer>
     </FAQPage>
     </>
-    
   )
 }
 
-export default FAQ
+export default TableFAQ
 
 const FAQPage = styled.div `
     padding: 0 calc(3.5vw + 5px);
@@ -81,7 +78,7 @@ const Titles = styled.div `
 const Title = styled.div `
     text-align: center;
     font-size: 4rem;
-    color: #500A1E;
+    color: #58787a;
     font-weight: bold;
     padding: 2vh 0vh;
 `
@@ -89,7 +86,7 @@ const Title = styled.div `
 const Subtitle = styled.div `
     text-align: center;
     font-size: 2.25rem;
-    color: #500A1E;
+    color: #58787a;
 `
 const AccordionContainer = styled.div `
     display: flex;
@@ -107,8 +104,8 @@ const Accordion = styled.div `
 `
 
 const QuestionBox = styled.div `
-    color: #8b1638;
-    border-color: #8b1638;
+    color: #252525;
+    border-color: #252525;
     border-radius: 2vh;
     margin-top: 3vh;
     border: 2px solid;
@@ -120,8 +117,8 @@ const QuestionBox = styled.div `
     cursor: pointer;
 
     &:hover {
-        background-color: #8b1638;
-        color: #F1EDE9;
+        background-color: #252525;
+        color: #afeff4;
     }
 `
 
@@ -135,8 +132,8 @@ const QIcon = styled.div `
 `
 
 const QAnswer = styled.div `
-    background: #8b1638d9;
-    color: #F1EDE9;
+    background: #afeff4d9;
+    color: #252525;
     width: 100%;
     height: calc(24vh - 5vw);
     display: flex;
@@ -145,7 +142,6 @@ const QAnswer = styled.div `
     align-items: start;
     border: 2px solid #F1EDE9;
     border-radius: 2vh;
-    
 `
 
 const Answer = styled.div `

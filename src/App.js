@@ -11,6 +11,10 @@ import Nosotros from './components/Nosotros';
 import Products from './components/Products';
 import Footer from './components/Footer';
 import Team from './components/Team';
+import HomeTable from './components/HomeTable';
+import TableUserManual from './components/TableUserManual';
+import TableTyC from './components/TableTyC';
+import TableFAQ from './components/TableFAQ';
 
 function App() {
   return (
@@ -25,6 +29,10 @@ function App() {
           <Route path = '/amanual' component={UserManual} />
           <Route path = '/afaq' component={FAQ} />
           <Route path = '/atyc' component={TyC} />
+          <Route path = '/table' component={HomeTable} />
+          <Route path = '/tmanual' component={TableUserManual} />
+          <Route path = '/ttyc' component={TableTyC} />
+          <Route path = '/tFAQ' component={TableFAQ} />
         </Switch>
       </Router>
     </div>

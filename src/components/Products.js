@@ -18,9 +18,11 @@ function Products() {
                     <img src='https://i.imgur.com/iNHZAWZ.png' width="100%"/>
                 </Product>
             </MenuLink>
+            <MenuLink to={`/table`}>
                 <Product>
                     <img src='images/table.png' width="90%"/>
                 </Product>
+            </MenuLink>
             </Contain>
         </Title>
     </Container>

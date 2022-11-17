@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import {Link} from 'react-router-dom'
 import { useHistory } from 'react-router-dom'
 
-function AlbumHeader() {
+function TableHeader() {
 
     const [isOpen, setIsOpen] = useState(false)
     const history = useHistory()
@@ -25,16 +25,16 @@ function AlbumHeader() {
             <span />
         </Hamburger>
         <NavMenu isOpen={isOpen}>
-            <MenuLink to={`/album`}> <span>Inicio</span> </MenuLink>
-            <MenuLink to={`/amanual`}> <span>Manual de Usuario</span> </MenuLink>
-            <MenuLink to={`/atyc`}> <span>Términos y Condiciones</span> </MenuLink>
-            <MenuLink to={`/afaq`}> <span>FAQ</span> </MenuLink>
+            <MenuLink to={`/table`}> <span>Inicio</span> </MenuLink>
+            <MenuLink to={`/tmanual`}> <span>Manual de Usuario</span> </MenuLink>
+            <MenuLink to={`/ttyc`}> <span>Términos y Condiciones</span> </MenuLink>
+            <MenuLink to={`/tfaq`}> <span>FAQ</span> </MenuLink>
         </NavMenu>
     </Nav>
   )
 }
 
-export default AlbumHeader
+export default TableHeader
 
 const Nav = styled.div `
   padding: 0 6vh 0 2vw; 
@@ -42,7 +42,7 @@ const Nav = styled.div `
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background: #8b1638;
+  background: #252525;
   position: relative;
   top: 0;
   left: 0;
@@ -99,7 +99,7 @@ const MenuLink = styled(Link) `
     text-decoration: none;
     transition: all 0.3s ease-in;
     font-size: 1.4rem;
-    color: #F1EDE9;
+    color: #afeff4;
     font-weight: bold;
     span{
         position: relative; 

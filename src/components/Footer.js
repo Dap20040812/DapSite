@@ -22,7 +22,7 @@ function Footer() {
             </Title>
             <ContactItem>
                 <Room style={{marginRight:'10px'}} />
-                Km. 7, Autopista Norte de Bogotá. Chía, Cundinamarca
+                Unnamed road chia cundix
             </ContactItem>
             <ContactItem>
                 <Phone style={{marginRight:'10px'}} />
